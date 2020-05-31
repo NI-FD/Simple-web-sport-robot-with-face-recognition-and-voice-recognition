@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <script type="text/javascript" src="js/control.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body onload="Blink();" style="background-color:#ccc;">
+    <div class="header">
+      <h1>NIKE - EXERCISE ROBOT</h1>
+    </div>
+    <div class="wrapper">
+      <!-- Robot -->
+      <div class="RobotDiv">
+<!--         <canvas class="RC" id="RobotCanvas" width="500" height="500"></canvas> -->
+         <svg id = "face" class="face"   width=30%;
+  height=500px onmousemove="moveEye(event)" style="outline: 5px solid #630" backgroundColor="#ccc">
+          
+          <circle id="leftEye" cx= 30% cy="45%" r=60 fill="black"> </circle>
+          <circle id="rightEye" cx="70%" cy="45%" r=60 fill="black"></circle>
+          
+          <circle id="inner_leftEye" cx=30% cy="45%" r=30 fill="white"> </circle>
+          <circle id="inner_rightEye" cx="70%" cy="45%" r=30 fill="white"></circle>
+        
+          <rect id="mouth" x="45%" y="60%" rx="60" ry="20" width="10%" height="100" style="fill:red;stroke:black;stroke-width:5;opacity:0.5;"/>
+           <circle id="smile" cx="50%" cy="63%" r="50" fill="#ccc" visibility="hidden"/>
+
+          
+<!--           <circle id="face" cx="50%" cy="50%" r=300 opacity=.5 stroke=black fill=white></circle> -->
+          
+        </svg>
+      </div>
+      
+      <!-- Text   -->
+      <div class="TextDiv">  
+        <p id="tip"> You can say "just do it" or click on button to start exercise, and you can say "stop" to stop the exercise during exercise.</p>
+        <H3>Robot:</H3>      
+        <p id="exercise">Welcome to use Nike Exercise Robot.</p>
+        <div class="NP">
+          <input id="previous" type="button" value="Back" onclick="previous();" style= "visibility: hidden">
+          &nbsp&nbsp&nbsp
+          <input id="finish" type="button" value="Okay" onclick="done();" style= "visibility: hidden">
+          &nbsp&nbsp&nbsp
+          <input id="next" type="button" value="Next" onclick="next();" style= "visibility: hidden">     
+
+          <p id="tipSpeech" style= "visibility: hidden">(You can say "Next" to next move, "Back" to previous move)</p>
+        </div>        
+
+
+
+      </div>    
+
+      <!-- Camera -->
+      <div class="CameraDiv">
+        <p id="cameradetect">Please make sure your face and exercise card appear on the screen at the same time.</p>
+        <div class="input">
+          <input class="start" type="button" value="Just Do It" onclick="startVideo();">
+          &nbsp&nbsp&nbsp
+          <input class="stop" type="button" value="Stop" onclick="stopCamera();">
+        </div>              
+        <div class="video">
+          <canvas class="CC" id="CameraCanvas" width="320" height="240"></canvas>
+          
+        </div>
+      </div>
+    </div>
+        <!--The video element for capturing images from the camera -->
+    <video id="myVideo" width="320" height="240" autoplay="true" hidden>
+    </video>
+    <footer id="clock">
+      Thanks for using.
+    </footer>
+  </body>
+</html>

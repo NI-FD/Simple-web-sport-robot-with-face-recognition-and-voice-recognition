@@ -1,0 +1,90 @@
+
+
+canvas.RC {
+    margin: auto;
+    border: 2px gray solid;
+  }
+  
+  canvas.CC {
+    border: 2px gray solid;
+    margin-bottom: 130px;
+  }
+  
+  div.header {
+    background-color: #3B5998; /*Actual Facebook blue*/
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 0px red solid;
+  }
+  
+  div.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border: 0px orange solid;
+  }
+  
+  div.RobotDiv {
+    background: #ccc;
+    padding: 20px;
+    width: 30%;
+    height: 500px;
+    border: 0px green solid;
+  }
+  
+  div.TextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  /*   align-items: center; */
+    padding: 20px;
+    background: #ccc;
+    width: 30%;
+    height: 500px;
+    border: 0px blue solid;
+  }
+  
+  div.CameraDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background: #ccc;
+    width: 40%;
+    height: 500px;
+    border: 0px blue solid;
+  }
+  
+  div.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ccc;
+    border: 0px blue solid;
+  }
+  
+  div.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ccc;
+    border: 0px blue solid;
+  }
+  
+  div.NP{
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #3B5998; 
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 0px red solid;
+  }
+  
+  
