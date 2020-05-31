@@ -15,7 +15,8 @@ This is a simple web application, it uses face recognition, word recognition and
   - User can say "just do it" to start or restart the interaction.
   - User can say "stop" to pause the interaction or end the interaction.
 
-## Run(Please use Chrome to run the application)
+![image](IMG/demo.JPG)
+## Run (please use Chrome to run the application)
 1. Directly open the index.html(All codes are coded by JavaScript, CSS, HTML)
 2. Click on "just do it" or speak "just do it" to start.
 3. Show Exercise Card and your face at the same time in front of camera.
