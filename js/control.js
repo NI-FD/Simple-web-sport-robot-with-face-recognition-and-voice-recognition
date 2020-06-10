@@ -172,7 +172,7 @@ function stopCamera(){
 function sendFaceRequest(picture)
 {
   var url =
-  "https://vision.googleapis.com/v1/images:annotate?key=[Your Key]";
+  "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBttL3_rUfMaP8vZQazT8bCd5XhHkmR4lA";
   
   var baseurl = picture.toDataURL();
   var base64 = baseurl.slice(22);
